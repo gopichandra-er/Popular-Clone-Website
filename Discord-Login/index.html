@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'system-ui';
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        h2 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        label {
+            color: #a2a4a8;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        span {
+            color: #ea4245;
+        }
+        
+        a {
+            color: #05a4e4;
+            text-decoration: none;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        input {
+            max-width: 100%;
+            height: 35px;
+            background: #202225;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            color: #fff;
+            padding: 0 10px;
+        }
+        
+        input[type='submit'] {
+            background: #4752c4;
+            height: 40px;
+            font-weight: 500;
+        }
+        
+        p {
+            color: #a2a4a8;
+            margin-top: -10px;
+            font-size: 14px;
+        }
+        
+        .container {
+            background: #36393f;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        
+        .container .form {
+            width: 400px;
+        }
+        
+        .container .title {
+            text-align: center;
+        }
+        
+        .container .form_row {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="">
+                <div class="title">
+                    <h2>Welcome back!</h2>
+                    <p>We're so excited to see you again!</p>
+                </div>
+                <div class="form_row">
+                    <label for="email">email or phone number <span>*</span></label>
+                    <input type="text" name="emaiil" id="email" required />
+                </div>
+                <div class="form_row">
+                    <label for="email">password <span>*</span></label>
+                    <input type="password" name="password" id="password" required />
+                    <a href="#">Forget your password?</a></div>
+                <div class="form_row">
+                    <input type="submit" value="Log In">
+                </div>
+                <div class="form_row">
+                    <p>Need an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
